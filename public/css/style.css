@@ -1,0 +1,52 @@
+/*this for posts*/
+.clearfix{
+  clear: both;
+
+}
+@media (max-width: 767px){
+  .poistionpost{
+    position: absolute;
+    bottom: -420px;
+    left: 25%;
+  }
+  .blogsearchcat{
+    margin-bottom: 100px;
+  }
+}
+.blogsearchcat{
+    margin-top: 50px;
+  }
+  .page-header{
+    margin-top:0;
+  }
+  .main-post{
+    background-color: #F1F3FA;
+    margin-bottom: 10px;
+    padding: 10px
+  }
+  /*end posts*/
+  /* start single posts */
+  .main-post-single{
+
+    margin-bottom: 10px;
+    
+  }
+  .main-post-single .content-post-single{
+     background-color: #F1F3FA;
+     padding: 10px
+  }
+   .page-header-single{
+    background-color: #F1F3FA;
+   }
+  .main-post-single .post-head{
+    margin-top: 10px;color: #fff
+  }
+
+  .main-post-single .content-post{
+    padding-left: 20px
+  }
+  .main-post-single .comment-post .comment-body 
+  {
+    background-color:#ccc;
+    padding: 20px
+  }

@@ -1,0 +1,48 @@
+<!Doctype html/>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>sales</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body>
+      
+    <div id="js">
+          <input type="text" v-model="myname" value="h"/><br/>
+       <ul>
+                        
+
+            <li v-for="person in perons">
+                id =>          {{ person.id}}  <br>
+                name =>        {{ person.name}}  <br>
+                age =>         {{ person.age}}  <br>
+                <span v-if="person.gender=='male'">
+                     <p style="color:red">
+                     gender =>      {{ person.gender}}  
+                     </p>
+                </span>
+                 <span v-if="person.gender=='female'">
+                     <p style="color:green">
+                     gender =>      {{ person.gender}}  
+                     </p>
+                </span>
+                
+                <button @click="deleteuser($index)">x</button>
+           </li>
+          
+        </ul>
+         <input type="text" v-model="id" placeholder="id" >
+         <input type="text"  v-model="name" placeholder="name" >
+         <input type="text"  v-model="age" placeholder="age" >
+         <select v-model="gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select>
+        <button @click="adduser" v-bind:disabled="hii">adduser</button>
+    </div>
+    
+    <script src="vue.js"></script>
+    <script src="app.js"></script>
+    </body>
+</html>
